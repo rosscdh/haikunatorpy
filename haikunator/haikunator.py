@@ -4,13 +4,13 @@ from random import Random
 class Haikunator:
     _adjectives = [
         'aged', 'ancient', 'autumn', 'billowing', 'bitter', 'black', 'blue', 'bold',
-        'broad', 'broken', 'calm', 'cold', 'cool', 'crimson', 'curly', 'damp',
+        'broad', 'broken', 'caviar', 'calm', 'cold', 'cool', 'cheeky', 'crimson', 'curly', 'damp',
         'dark', 'dawn', 'delicate', 'divine', 'dry', 'empty', 'falling', 'fancy',
-        'flat', 'floral', 'fragrant', 'frosty', 'gentle', 'green', 'hidden', 'holy',
-        'icy', 'jolly', 'late', 'lingering', 'little', 'lively', 'long', 'lucky',
-        'misty', 'morning', 'muddy', 'mute', 'nameless', 'noisy', 'odd', 'old',
-        'orange', 'patient', 'plain', 'polished', 'proud', 'purple', 'quiet', 'rapid',
-        'raspy', 'red', 'restless', 'rough', 'round', 'royal', 'shiny', 'shrill',
+        'flat', 'floral', 'fragrant', 'frothy', 'frosty', 'gentle', 'green', 'hidden', 'holy', 'hard',
+        'icy', 'jolly', 'infaillible', 'late', 'lingering', 'little', 'lively', 'long', 'lucky', 'lush',
+        'misty', 'morning', 'muddy', 'mute', 'nameless', 'noisy', 'nude', 'odd', 'old',
+        'orange', 'patient', 'plain', 'polished', 'presumptuous', 'prime', 'proud', 'purple', 'quiet', 'rapid',
+        'raspy', 'runny', 'red', 'restless', 'rough', 'round', 'royal', 'satin', 'shiny', 'shrill',
         'shy', 'silent', 'small', 'snowy', 'soft', 'solitary', 'sparkling', 'spring',
         'square', 'steep', 'still', 'summer', 'super', 'sweet', 'throbbing', 'tight',
         'tiny', 'twilight', 'wandering', 'weathered', 'white', 'wild', 'winter', 'wispy',
@@ -18,18 +18,18 @@ class Haikunator:
     ]
 
     _nouns = [
-        'art', 'band', 'bar', 'base', 'bird', 'block', 'boat', 'bonus',
+        'art', 'band', 'bar', 'base', 'bird', 'block', 'boat', 'bonus', 'bone',
         'bread', 'breeze', 'brook', 'bush', 'butterfly', 'cake', 'cell', 'cherry',
         'cloud', 'credit', 'darkness', 'dawn', 'dew', 'disk', 'dream', 'dust',
-        'feather', 'field', 'fire', 'firefly', 'flower', 'fog', 'forest', 'frog',
+        'feather', 'field', 'fire', 'firefly', 'fantasy', 'flower', 'fog', 'forest', 'frog',
         'frost', 'glade', 'glitter', 'grass', 'hall', 'hat', 'haze', 'heart',
-        'hill', 'king', 'lab', 'lake', 'leaf', 'limit', 'math', 'meadow',
+        'hill', 'illuminator', 'jelly', 'king', 'lab', 'lip', 'lake', 'leaf', 'limit', 'math', 'meadow',
         'mode', 'moon', 'morning', 'mountain', 'mouse', 'mud', 'night', 'paper',
-        'pine', 'poetry', 'pond', 'queen', 'rain', 'recipe', 'resonance', 'rice',
+        'pine', 'poetry', 'pond', 'pouch', 'queen', 'rain', 'recipe', 'resonance', 'romance', 'rice',
         'river', 'salad', 'scene', 'sea', 'shadow', 'shape', 'silence', 'sky',
-        'smoke', 'snow', 'snowflake', 'sound', 'star', 'sun', 'sun', 'sunset',
-        'surf', 'term', 'thunder', 'tooth', 'tree', 'truth', 'union', 'unit',
-        'violet', 'voice', 'water', 'waterfall', 'wave', 'wildflower', 'wind', 'wood'
+        'smoke', 'snow', 'snowflake', 'sound', 'star', 'stick', 'sun', 'sun', 'sunset',
+        'surf', 'temptation', 'term', 'thunder', 'tooth', 'tree', 'tube', 'truth', 'union', 'unit',
+        'violet', 'voice', 'water', 'waterfall', 'wishbone', 'wave', 'wildflower', 'wind', 'wood'
     ]
 
     def __init__(self, seed=None, adjectives=None, nouns=None):
